@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 456" role="img" aria-labelledby="crest-title crest-description">
+  <title id="crest-title">The Jesionowski family crest</title>
+  <desc id="crest-description">An ash tree with lilac leaves and connected golden roots grows beneath a north star. A sunrise arc and an ornamental violet shield surround the tree.</desc>
+  <defs>
+    <linearGradient id="field" x2=".85" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#473075"/>
+      <stop offset=".55" stop-color="#2b1e4e"/>
+      <stop offset="1" stop-color="#211738"/>
+    </linearGradient>
+    <linearGradient id="gilt" x2=".85" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#fff8eb"/>
+      <stop offset=".45" stop-color="#ffd58d"/>
+      <stop offset="1" stop-color="#d48b68"/>
+    </linearGradient>
+    <radialGradient id="dawn" cx=".5" cy=".93" r=".66">
+      <stop stop-color="#a368aa" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#a368aa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="foliage" x2=".8" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#fff8eb"/>
+      <stop offset=".52" stop-color="#e7dbfb"/>
+      <stop offset="1" stop-color="#ac91ea"/>
+    </linearGradient>
+    <path id="shield" d="M210 43c-36 22-77 34-126 36v144c0 84 46 141 126 184 80-43 126-100 126-184V79c-49-2-90-14-126-36Z"/>
+    <path id="inset" d="M210 61c-32 19-69 29-111 32v130c0 75 40 127 111 168 71-41 111-93 111-168V93c-42-3-79-13-111-32Z"/>
+    <clipPath id="shield-interior">
+      <use href="#inset"/>
+    </clipPath>
+    <path id="spark" d="M0-13C1-4 4-1 13 0 4 1 1 4 0 13-1 4-4 1-13 0-4-1-1-4 0-13Z"/>
+    <g id="flourish" fill="none" stroke="#7258bd" stroke-width="1.45" stroke-linecap="round">
+      <path d="M72 92c-26 4-38 25-37 45 1 16 13 21 19 12 4-6 0-13-6-12"/>
+      <path d="M64 104c-15 9-22 19-20 33m15 28c-13 23-13 52-7 77 4 16 3 29-6 37-8 7-20 5-25-3-5-9 1-18 8-17 5 0 8 4 7 8"/>
+      <path d="M61 238c8 48 32 88 65 120m-70-62c6 18 19 35 34 46 7 5 9 12 6 18-3 5-11 6-14 0"/>
+      <path d="M76 334c8 15 19 28 37 39m20-4c13 12 28 22 45 31m-60-22c8 12 23 22 37 27"/>
+      <path d="M59 190c-12-5-18-14-18-25 10 5 16 13 18 25Zm1 13c3-14 9-20 18-24-1 11-7 20-18 24Zm15 106c-11-3-19-11-20-23 12 6 18 12 20 23Zm27 39c-1-14 4-23 11-30 5 13 0 23-11 30Z" fill="#e7dbfb"/>
+      <circle cx="38" cy="225" r="2.2" fill="#7258bd" stroke="none"/>
+      <circle cx="63" cy="285" r="2.2" fill="#7258bd" stroke="none"/>
+    </g>
+    <g id="sprig">
+      <path d="M0 5C-1-11 0-30 0-47" fill="none" stroke="#ffd58d" stroke-width="1.65" stroke-linecap="round"/>
+      <path d="M0-37C-8-44-5-55 0-63c5 8 8 19 0 26ZM0-25C-11-23-19-29-22-38c10 0 18 5 22 13Zm0 0c11 2 19-4 22-13C12-38 4-33 0-25ZM0-13c-10 3-19-1-24-10 11-1 19 3 24 10Zm0 0c10 3 19-1 24-10C13-24 5-20 0-13ZM0-2c-9 3-17 1-22-5 10-3 17-1 22 5Zm0 0c9 3 17 1 22-5C12-10 5-8 0-2Z" fill="url(#foliage)"/>
+      <path d="M0-40v-14m-1 28-13-7m15 7 13-7M-2-13l-12-5m16 5 12-5" fill="none" stroke="#7258bd" stroke-width=".7" opacity=".7" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <use href="#flourish"/>
+  <use href="#flourish" transform="translate(420 0) scale(-1 1)"/>
+  <g fill="#7258bd">
+    <use href="#spark" transform="translate(51 74) scale(.7)"/>
+    <use href="#spark" transform="translate(369 74) scale(.7)"/>
+    <use href="#spark" transform="translate(68 373) scale(.51)"/>
+    <use href="#spark" transform="translate(352 373) scale(.51)"/>
+  </g>
+  <g fill="none" stroke="#7258bd" stroke-width="1.15">
+    <path d="M182 36c8-4 17-10 28-18 11 8 20 14 28 18"/>
+    <path d="M184 419c9 7 17 12 26 17 9-5 17-10 26-17"/>
+    <circle cx="210" cy="8" r="2.7" fill="#7258bd"/>
+    <circle cx="210" cy="445" r="2.7" fill="#7258bd"/>
+  </g>
+  <use href="#shield" fill="#211738" stroke="#211738" stroke-width="9" stroke-linejoin="round"/>
+  <use href="#shield" fill="none" stroke="url(#gilt)" stroke-width="2.4" stroke-linejoin="round"/>
+  <use href="#inset" fill="url(#field)" stroke="#c2a0eb" stroke-width="1.15"/>
+  <g clip-path="url(#shield-interior)">
+    <path d="M99 110h222v284H99z" fill="url(#dawn)"/>
+    <g fill="none" stroke="url(#gilt)" stroke-linecap="round">
+      <path d="M115 238a95 95 0 0 1 190 0" opacity=".78" stroke-width="1.25"/>
+      <path d="M125 238a85 85 0 0 1 170 0" opacity=".52" stroke-width="1"/>
+      <path d="M104 238h212m-211 15h210m-209 11h208m-205 11h202" opacity=".23" stroke-width=".85"/>
+      <path d="M123 206l-8-4m22-18-9-7m26-11-6-9m30-2-4-10m68 10 4-10m20 21 6-9m11 27 9-7m5 29 8-4" opacity=".68" stroke-width="1"/>
+      <path d="M116 103c14 0 22-2 34-5m154 5c-14 0-22-2-34-5" opacity=".8"/>
+    </g>
+    <g fill="#ffd58d">
+      <use href="#spark" transform="translate(210 108) scale(1.32)"/>
+      <use href="#spark" transform="translate(152 132) scale(.48)"/>
+      <use href="#spark" transform="translate(268 132) scale(.48)"/>
+      <use href="#spark" transform="translate(125 155) scale(.38)"/>
+      <use href="#spark" transform="translate(295 155) scale(.38)"/>
+      <circle cx="181" cy="117" r="1.8"/>
+      <circle cx="239" cy="117" r="1.8"/>
+      <circle cx="116" cy="180" r="1.45"/>
+      <circle cx="304" cy="180" r="1.45"/>
+      <circle cx="210" cy="136" r="1.5"/>
+    </g>
+    <g fill="none" stroke="url(#gilt)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M212 291c0-29-5-49-14-61-9-12-21-20-33-31m43 70c-6-19-23-31-37-32-12-1-21-5-32-10m73 64c-3-41 3-62 13-76 7-10 17-16 28-24m-38 75c8-19 21-26 35-28 11-2 21-8 29-15m-68 21c-2-19-3-30 0-44" stroke-width="3.4"/>
+      <path d="M204 253c3 16 4 37 0 55-2 8-8 12-16 15 10 0 18-2 22-7 5 5 12 7 23 7-9-4-14-9-16-16-3-13-3-29-1-43-4 5-6 12-6 18-1-11-2-21-6-29Z" fill="url(#gilt)" stroke="none"/>
+      <path d="M210 315c0 19-8 28-12 38m13-38c2 19 11 24 13 38m-15-38c-13 9-28 8-36 17-5 6-6 12-14 18m52-35c13 9 29 9 37 18 5 6 6 11 13 17m-70-29c-20 0-25-8-43-4-6 1-12 4-17 8m97-4c20 0 25-8 43-4 6 1 12 4 17 8" stroke-width="2.35"/>
+      <path d="M202 337c-8 0-13 5-16 12m32-13c8 1 14 5 17 12m-61-17c-11-3-16 0-22 5m93-5c10-3 15 0 21 5m-65 10c2 5 2 9-1 13m22-13c-2 5-2 9 1 13" opacity=".85" stroke-width="1.35"/>
+      <path d="M128 305c11-4 22-6 35-6m94 0c13 0 24 2 35 6m-122-6h17m46 0h17" opacity=".57" stroke-width="1.1"/>
+    </g>
+    <use href="#sprig" transform="translate(166 202) rotate(-41) scale(.86)"/>
+    <use href="#sprig" transform="translate(150 232) rotate(-72) scale(.75)"/>
+    <use href="#sprig" transform="translate(210 211) rotate(1) scale(1.04)"/>
+    <use href="#sprig" transform="translate(249 198) rotate(38) scale(.9)"/>
+    <use href="#sprig" transform="translate(268 232) rotate(69) scale(.76)"/>
+    <g fill="#e7dbfb">
+      <circle cx="128" cy="269" r="1.7"/>
+      <circle cx="292" cy="269" r="1.7"/>
+      <circle cx="168" cy="271" r="1.7"/>
+      <circle cx="252" cy="271" r="1.7"/>
+      <use href="#spark" transform="translate(146 277) scale(.55)"/>
+      <use href="#spark" transform="translate(274 277) scale(.55)"/>
+    </g>
+    <path d="M210 360l4 7-4 7-4-7Z" fill="#ffd58d"/>
+    <path d="M176 365c9 7 17 11 23 14m45-14c-9 7-17 11-23 14" fill="none" stroke="#c2a0eb" stroke-width="1.15" stroke-linecap="round"/>
+  </g>
+  <use href="#inset" fill="none" stroke="#c2a0eb" stroke-width="1.15"/>
+  <g fill="#ffd58d">
+    <circle cx="91.5" cy="105" r="1.8"/>
+    <circle cx="328.5" cy="105" r="1.8"/>
+    <circle cx="91.5" cy="226" r="1.8"/>
+    <circle cx="328.5" cy="226" r="1.8"/>
+    <path d="M210 393l3.4 3.4-3.4 3.4-3.4-3.4Z"/>
+  </g>
+</svg>
