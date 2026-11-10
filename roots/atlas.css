@@ -194,3 +194,115 @@
   .record-list li { grid-template-columns: 1fr; gap: .3rem; }
   .population-panel th, .population-panel td { font-size: .78rem; }
 }
+
+
+/* Chapter 07: Ash-tree symbolism — interpretation kept distinct from surname evidence */
+.chapter-symbolism {
+  overflow: hidden;
+  background: radial-gradient(ellipse at 85% 10%, #e8d9ec 0%, transparent 42%), #fff9ee;
+}
+.meaning-heading { max-width: 64rem; }
+.chapter-symbolism h2 { max-width: 63rem; font-size: clamp(2.9rem, 6.3vw, 6.3rem); }
+.chapter-symbolism h2 em { color: #775080; }
+.meaning-deck {
+  max-width: 45rem;
+  margin-top: 1.35rem;
+  color: #493452;
+  font: clamp(1.2rem, 2.3vw, 1.65rem)/1.5 var(--display);
+}
+.meaning-distinction {
+  max-width: 54rem;
+  margin-top: 1.2rem;
+  color: var(--muted);
+}
+.meaning-hero-art { margin-top: 2.3rem; }
+.meaning-hero-art img {
+  display: block;
+  width: 100%;
+  max-height: 29rem;
+  object-fit: cover;
+  object-position: center 58%;
+  border-radius: 1.2rem;
+  border: 1px solid #bdacc1;
+}
+.meaning-hero-art figcaption { justify-content: flex-end; }
+.meaning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.meaning-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  border: 1px solid #ddcbd8;
+  border-radius: 1.1rem;
+  background: #f5edf8;
+}
+.meaning-card:nth-child(3) { background: #fdf0e2; border-color: #e9d6c0; }
+.meaning-card:nth-child(4) { background: #f5edf1; }
+.meaning-card:nth-child(5) { background: #edf1e7; border-color: #cedcc6; }
+.meaning-number {
+  margin-bottom: 1.6rem;
+  color: #74547b;
+  font-size: .72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .17em;
+}
+.meaning-card h3 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
+.meaning-card h3 em { font-weight: normal; color: #f5d19a; }
+.meaning-card > p:not(.meaning-line):not(.meaning-source) { max-width: 41rem; margin-top: 1rem; color: #594c60; }
+.meaning-card .meaning-line {
+  margin-top: 1.35rem;
+  color: #402751;
+  font: italic 1.22rem/1.45 var(--display);
+}
+.meaning-card .meaning-source {
+  margin-top: auto;
+  padding-top: 1.8rem;
+  color: #66596b;
+  font-size: .76rem;
+}
+.meaning-source a { text-underline-offset: .18em; }
+.meaning-feature {
+  grid-column: 1 / -1;
+  min-height: 19rem;
+  background: radial-gradient(ellipse at 86% 25%, #69446c 0%, transparent 60%), #2c1c37;
+  color: #fff8ec;
+  border-color: #694a72;
+}
+.meaning-feature .meaning-number { color: #e5c18d; }
+.meaning-feature h3 { font-size: clamp(2.25rem, 4.2vw, 3.7rem); }
+.meaning-feature > p:not(.meaning-line):not(.meaning-source) { color: #f1e3ee; }
+.meaning-feature .meaning-line { color: #f7d29c; }
+.meaning-feature .meaning-source, .meaning-feature .meaning-source a { color: #e6d3e0; }
+.meaning-creed {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+  margin-top: 2.1rem;
+  padding: clamp(1.6rem, 4vw, 3.5rem);
+  border-radius: 1.4rem;
+  background: #eadddf;
+  border: 1px solid #d8c1cb;
+}
+.meaning-creed-icon { align-self: start; }
+.meaning-creed-icon img { width: min(100%, 8rem); height: auto; }
+.meaning-creed .eyebrow { color: #5b3b67; }
+.meaning-creed blockquote { margin: 1rem 0; }
+.meaning-creed blockquote p { color: #35203b; font: clamp(1.3rem, 2.65vw, 2rem)/1.58 var(--display); letter-spacing: -.02em; }
+.meaning-closing { max-width: 39rem; color: #59435e; }
+.meaning-footnote { max-width: 62rem; margin-top: 1.5rem; color: #5c505c; font-size: .86rem; }
+.meaning-footnote a { font-weight: 700; }
+@media (max-width: 42rem) {
+  .meaning-grid { grid-template-columns: 1fr; }
+  .meaning-feature { grid-column: 1; }
+  .meaning-creed { grid-template-columns: 1fr; }
+  .meaning-creed-icon img { max-width: 5rem; }
+  .meaning-hero-art img { max-height: 20rem; }
+  .meaning-number { margin-bottom: .9rem; }
+}
