@@ -10,6 +10,8 @@ Family history contributions should cite the underlying record. Ask permission b
 
 The atlas lives in `roots/`. Its citations appear alongside each claim. The family-tree worksheet keeps inputs in the current page and exports a plain-text file directly in the browser.
 
+The historical surname index lives in `tree/`. Each branch cites the sources that name its relationships. Individual sightings stay separate until a record connects them. The filter searches the records on the page.
+
 The Research Desk lives in `research/`. It keeps the active draft in the page, with an editable JSON download to reopen later and a plain-text export for reading. Draft contents stay on the device.
 
 ## Generated art
