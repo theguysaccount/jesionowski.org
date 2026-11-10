@@ -40,9 +40,43 @@
 .today-card h3, .today-research h3 { font-size: clamp(1.45rem, 3.4vw, 2.1rem); line-height: 1.12; }
 .today-card .eyebrow { margin-bottom: .55rem; }
 .today-card h3 + p, .today-research p { margin-top: .65rem; }
-.today-card > a { display: inline-block; margin-top: .75rem; }
 .today-card .actions { margin-top: 1rem; }
 .today-research { margin-top: 1rem; background: #f8ecd7; }
+
+.directory-search {
+  max-width: 35rem;
+  margin-top: 1.4rem;
+  padding: 1rem;
+  border: 1px solid #cbb8d0;
+  border-radius: .85rem;
+  background: #fff9ee;
+}
+
+.directory-search label { display: block; margin-bottom: .45rem; font-weight: 700; }
+.directory-controls { display: flex; gap: .6rem; }
+.directory-controls input, .directory-controls button {
+  min-height: 2.75rem;
+  padding: .55rem .7rem;
+  border: 1px solid #8c769f;
+  border-radius: .4rem;
+  background: #fffdf7;
+  color: var(--ink);
+  font: inherit;
+}
+.directory-controls input { flex: 1; min-width: 0; }
+.directory-controls button { background: #f0e8ff; cursor: pointer; font-weight: 700; }
+.directory-controls button:hover { background: #e5d6f8; }
+.directory-count { margin-top: .45rem; color: var(--muted); font-size: .9rem; }
+.directory-empty, .directory-note { margin-top: 1rem; color: var(--muted); }
+#directory-profiles .today-card:target { outline: 2px solid var(--plum); }
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1rem;
+  margin-top: .9rem;
+  color: var(--plum);
+  font-size: .91rem;
+}
 
 .today-figures { margin-bottom: 1rem; }
 .today-figures > div { border-top: 2px solid #b28b48; padding-top: .7rem; }
