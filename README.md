@@ -18,6 +18,8 @@ The Source Book lives in `sources/`. Each record page identifies the version con
 
 The Research Desk lives in `research/`. It keeps the active draft in the page, with an editable JSON download to reopen later and a plain-text export for reading. Draft contents stay on the device.
 
+Jesionowski Today lives in `today/`. Its introductions are optional public posts in the site repository. Public-work references stay separate from the historical family branches.
+
 ## Generated art
 
 The bookplate and meadow were created with the built-in OpenAI image generation tool. The files in `assets/` are JPEG versions for the site.
