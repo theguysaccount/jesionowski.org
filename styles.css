@@ -106,6 +106,7 @@ h1 em { display: inline-block; }
   color: var(--muted);
   font-size: clamp(1rem, 1.65vw, 1.19rem);
 }
+.hero-lede + .hero-lede { margin-top: .85rem; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.25rem; margin-top: 1.85rem; }
 .button {
   display: inline-flex;
