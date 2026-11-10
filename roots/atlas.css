@@ -49,6 +49,32 @@
 .ipa { color: var(--muted); font-size: .87rem; }
 .ipa span { display: inline-block; margin-left: .3rem; font: 1.06rem/1.2 var(--display); color: var(--ink); }
 
+.word-root {
+  margin-top: 1.5rem;
+  padding: clamp(1.05rem, 3.1vw, 1.85rem);
+  border: 1px solid #d8bfce;
+  border-radius: .9rem;
+  background: #f4e7ee;
+}
+.word-root h3 { margin-top: .4rem; font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
+.word-root > div > p:last-child { max-width: 48rem; margin-top: .45rem; color: var(--muted); }
+.word-root ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+.word-root li {
+  padding: .8rem .95rem;
+  border: 1px solid #e4cfda;
+  border-radius: .65rem;
+  background: #fffaf1;
+}
+.word-root li strong { font: 1.25rem/1.2 var(--display); }
+.word-root li > p:not(.source-line) { margin-top: .32rem; color: var(--muted); font-size: .94rem; }
+
 .place-list { margin: 1.15rem 0 0; }
 .place-list div { padding-block: .75rem; border-top: 1px solid #ddc9d2; }
 .place-list dt { font: 1.38rem/1.2 var(--display); }
@@ -90,13 +116,15 @@
 .bar-table td:nth-child(2) { width: 50%; }
 .bar {
   display: block;
-  width: var(--pct);
   min-width: 3rem;
   padding-inline: .45rem;
   border-radius: .25rem;
   background: #e9d5f4;
   color: #3d2350;
 }
+.bar-table tbody tr:nth-child(1) .bar { width: 92.3%; }
+.bar-table tbody tr:nth-child(2) .bar { width: 95.1%; }
+.bar-table tbody tr:nth-child(3) .bar { width: 91.7%; }
 .counts-table td { text-align: right; }
 .counts-table th[scope="col"]:not(:first-child) { text-align: right; }
 .counts-table tr:last-child { background: #f4e6f5; }
@@ -179,7 +207,7 @@
 
 @media (max-width: 50rem) {
   .cover-grid, .chapter-split, .emblem-layout { gap: 1.65rem; }
-  .atlas-card-grid { grid-template-columns: 1fr; }
+  .atlas-card-grid, .word-root ol { grid-template-columns: 1fr; }
 }
 @media (max-width: 42rem) {
   .cover-grid, .chapter-split, .population-grid, .record-tree-grid, .research-guide, .emblem-layout { grid-template-columns: 1fr; }

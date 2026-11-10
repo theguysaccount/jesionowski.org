@@ -157,6 +157,48 @@ h2 { margin-top: .78rem; font-size: clamp(2.75rem, 5.7vw, 5.2rem); }
   color: var(--muted);
   font-size: 1.08rem;
 }
+.mythos {
+  border-bottom: 1px solid #decbd7;
+  background: radial-gradient(ellipse at 88% 22%, #ffedc9 0%, transparent 49%), #f4eaf1;
+}
+.mythos-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr);
+  align-items: center;
+  gap: clamp(1.45rem, 5.7vw, 5rem);
+}
+.mythos-note { max-width: 36rem; margin-top: .65rem; color: var(--muted); }
+.mythos-art img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #c6a794;
+  border-radius: .85rem;
+  box-shadow: 0 12px 32px #49265c22;
+}
+.mythos-art figcaption { text-align: center; }
+.mythos-parts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+  margin: 1.65rem 0 0;
+}
+.mythos-parts div {
+  padding: 1rem 1.15rem;
+  border: 1px solid #deccd8;
+  border-radius: .75rem;
+  background: #fff8ef;
+}
+.mythos-parts dt { font: 1.45rem/1.18 var(--display); }
+.mythos-parts dt span {
+  display: block;
+  margin-bottom: .32rem;
+  color: var(--plum);
+  font: 700 .68rem/1.35 var(--body);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.mythos-parts dd { margin: .42rem 0 0; color: var(--muted); font-size: .92rem; }
+
 .creed { background: #fff9ee; }
 .creed-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.25rem; }
 .creed-grid article {
@@ -170,7 +212,7 @@ h2 { margin-top: .78rem; font-size: clamp(2.75rem, 5.7vw, 5.2rem); }
 .creed-grid article:nth-child(3) { background: #fff0d9; border-color: #ebd6b5; }
 .principle-icon { display: block; margin-bottom: .7rem; color: #6e478f; font-size: 1.65rem; line-height: 1; }
 h3 { font-size: clamp(1.45rem, 2.5vw, 1.85rem); line-height: 1.15; letter-spacing: -.027em; }
-.creed-grid p, .timeline p:last-child { margin-top: .7rem; color: var(--muted); }
+.creed-grid p { margin-top: .7rem; color: var(--muted); }
 
 .roots { background: #efe7f9; border-block: 1px solid #ddcdeb; }
 .roots-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(1.5rem, 6vw, 5.5rem); align-items: start; }
@@ -205,35 +247,7 @@ h3 { font-size: clamp(1.45rem, 2.5vw, 1.85rem); line-height: 1.15; letter-spacin
 .crest-note img { flex: 0 0 auto; width: 3.4rem; height: auto; }
 .crest-note a { flex: 0 0 auto; margin-left: auto; font-weight: 700; }
 
-.plan { background: #fff9ee; }
-.plan-layout { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(2rem, 7vw, 6rem); }
-.plan-label {
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: .36rem .7rem;
-  border: 1px solid #dcbf9d;
-  border-radius: 99px;
-  color: #684523;
-  font-size: .76rem;
-  font-weight: 700;
-}
-.timeline { margin: .2rem 0 0; padding: 0 0 0 1.4rem; border-left: 1px solid #b293c4; list-style: none; }
-.timeline li { position: relative; padding-bottom: 1.65rem; }
-.timeline li:last-child { padding-bottom: .15rem; }
-.timeline li::before {
-  position: absolute;
-  top: .26rem;
-  left: -1.75rem;
-  width: .65rem;
-  height: .65rem;
-  transform: rotate(45deg);
-  border: 1px solid #754991;
-  background: #eedcfa;
-  content: "";
-}
-.timeline h3 { margin-top: .4rem; }
-
-.contribute { padding-top: 0; }
+.contribute { padding-top: clamp(3rem, 6vw, 5rem); }
 .invitation {
   position: relative;
   overflow: hidden;
@@ -263,10 +277,10 @@ h3 { font-size: clamp(1.45rem, 2.5vw, 1.85rem); line-height: 1.15; letter-spacin
   .masthead { min-height: 0; flex-wrap: wrap; justify-content: space-between; gap: .65rem; padding-block: .8rem; }
   .masthead nav { order: 1; width: 100%; justify-content: space-between; padding-top: .55rem; border-top: 1px solid var(--line); }
   .masthead nav a { min-height: 2rem; display: inline-flex; align-items: center; }
-  .hero-layout, .roots-layout, .plan-layout { grid-template-columns: 1fr; }
+  .hero-layout, .roots-layout, .mythos-layout { grid-template-columns: 1fr; }
   .hero-layout { gap: 2.3rem; }
   .home-bookplate { justify-self: center; }
-  .creed-grid { grid-template-columns: 1fr; }
+  .creed-grid, .mythos-parts { grid-template-columns: 1fr; }
   .crest-note { flex-wrap: wrap; }
   .crest-note a { margin-left: 0; }
   .footer-layout { flex-wrap: wrap; padding-block: 1rem; gap: .7rem 1rem; }

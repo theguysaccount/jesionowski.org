@@ -1,8 +1,10 @@
 # Jesionowski Family
 
-The public family field guide, including the Jesionowski surname, our modern crest, and a starter plan for building trust and imagining futures together.
+The public family field guide, including the Jesionowski surname, our modern crest, and our family mythos of connecting heaven and earth.
 
-Edit the site in `index.html`, the styling in `styles.css`, or the artwork in `assets/`. GitHub Pages publishes the root of `main` after updates. No dependencies or build steps are required. To preview on your computer, open `index.html` directly.
+Edit the site in `index.html`, the styling in `styles.css`, or the artwork in `assets/`. GitHub Pages publishes the root of `main` after updates. No dependencies or build steps are required. To preview, serve the repository over localhost with a static server such as `python3 -m http.server`.
+
+GitHub Pages enforces HTTPS. The content security policy in each page permits local scripts, styles, and images. It blocks background network connections and form submissions, so keep the Research Desk and worksheet local to the browser.
 
 Family history contributions should cite the underlying record. Ask permission before publishing a living person’s story or photo. Keep private family records outside this public repository.
 
