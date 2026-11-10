@@ -14,6 +14,8 @@ The atlas lives in `roots/`. Its citations appear alongside each claim. The fami
 
 The historical surname index lives in `tree/`. Each branch cites the sources that name its relationships. Individual sightings stay separate until a record connects them. The filter searches the records on the page.
 
+The Source Book lives in `sources/`. Each record page identifies the version consulted, separates recorded wording from interpretation, and links back to the archive or published source.
+
 The Research Desk lives in `research/`. It keeps the active draft in the page, with an editable JSON download to reopen later and a plain-text export for reading. Draft contents stay on the device.
 
 ## Generated art
