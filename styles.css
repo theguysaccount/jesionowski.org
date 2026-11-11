@@ -67,9 +67,10 @@ h1 em, h2 em { font-weight: 400; color: #694097; }
   text-transform: uppercase;
   letter-spacing: .22em;
 }
-.masthead nav { display: flex; align-items: center; gap: clamp(1rem, 3.2vw, 2.75rem); }
+.masthead nav { display: flex; flex-wrap: wrap; align-items: center; gap: .15rem clamp(.75rem, 2.4vw, 2rem); }
 .masthead nav a, .nav-cta, .site-footer { font-size: .87rem; font-weight: 700; }
 .masthead nav a, .nav-cta { text-decoration: none; }
+.masthead nav a { white-space: nowrap; }
 .masthead nav a:hover, .nav-cta:hover { text-decoration: underline; }
 .nav-cta { padding: .42rem .88rem; border: 1px solid #baa8cc; border-radius: 99px; white-space: nowrap; }
 .nav-cta span { margin-left: .3rem; }
