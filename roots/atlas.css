@@ -105,6 +105,11 @@
   background: #f5e7ec;
 }
 .atlas-note h3 + p { margin-top: .45rem; }
+.public-life-note { display: flex; flex-wrap: wrap; align-items: start; gap: 1.25rem 2rem; }
+.public-life-note > div { flex: 1 1 22rem; }
+.public-life-note p + p { margin-top: .62rem; }
+.public-life-note .artwork { width: min(100%, 9rem); }
+.public-life-note figcaption { display: block; text-align: left; }
 
 .population-grid, .record-tree-grid, .research-guide { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .population-panel .counts-note { margin-top: .7rem; color: var(--muted); font-size: .88rem; }
