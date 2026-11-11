@@ -69,6 +69,14 @@
 .directory-count { margin-top: .45rem; color: var(--muted); font-size: .9rem; }
 .directory-empty, .directory-note { margin-top: 1rem; color: var(--muted); }
 #directory-profiles .today-card:target { outline: 2px solid var(--plum); }
+.directory-photo { margin: 1rem 0 0; }
+.directory-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .55rem;
+}
+.directory-photo figcaption { margin-top: .4rem; color: var(--muted); font-size: .82rem; }
 .profile-links {
   display: flex;
   flex-wrap: wrap;
