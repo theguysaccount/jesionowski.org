@@ -23,6 +23,23 @@
 .today-band { background: #f2e8f6; border-block: 1px solid var(--line); }
 .today-intro { max-width: 46rem; color: var(--muted); }
 
+.family-spotlight {
+  margin-top: 1.35rem;
+  padding: .9rem 1.05rem;
+  border: 1px solid #d2b8cb;
+  border-radius: .75rem;
+  background: #fff6e8;
+}
+.family-spotlight > div, .family-spotlight ul {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: .35rem 1.1rem;
+}
+.family-spotlight h3 { font-size: 1.35rem; }
+.family-spotlight ul { margin: .25rem 0 0; padding: 0; list-style: none; }
+.family-spotlight li a { color: var(--plum); font-size: .9rem; }
+
 .today-grid, .today-figures {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

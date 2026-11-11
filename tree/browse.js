@@ -37,6 +37,11 @@ function filterRecords() {
 
 function revealLinkedBranch() {
   const linked = document.getElementById(location.hash.slice(1));
+  if (linked?.dataset.record && linked.hidden) {
+    searchForm.reset();
+    filterRecords();
+    linked.scrollIntoView();
+  }
   if (linked instanceof HTMLDetailsElement && linked.dataset.record === 'branch') linked.open = true;
 }
 
@@ -49,3 +54,44 @@ window.addEventListener('hashchange', revealLinkedBranch);
 filterRecords();
 revealLinkedBranch();
 searchForm.hidden = false;
+
+const timeline = document.querySelector('.timeline-years');
+const timelinePreview = document.querySelector('#timeline-preview');
+const timelineContext = document.querySelector('#timeline-context');
+const timelineTitle = document.querySelector('#timeline-preview-title');
+const timelineBody = document.querySelector('#timeline-preview-body');
+const timelineRecord = document.querySelector('#timeline-record-link');
+
+function showMilestone(link) {
+  const entry = document.getElementById(link.hash.slice(1));
+  if (!entry?.dataset.record) return false;
+
+  const isBranch = entry.dataset.record === 'branch';
+  const title = entry.querySelector(isBranch ? 'summary strong' : 'h4');
+  const content = isBranch ? [...entry.querySelector('.branch-body').children] :
+    [...entry.children].filter(child => child !== title && !child.classList.contains('eyebrow'));
+
+  timeline.querySelector('[aria-current]')?.removeAttribute('aria-current');
+  link.setAttribute('aria-current', 'true');
+  timelineContext.textContent = entry.querySelector('.eyebrow').textContent;
+  timelineTitle.textContent = title.textContent;
+  timelineBody.replaceChildren(...content.map(element => element.cloneNode(true)));
+  timelineRecord.href = link.hash;
+  timelinePreview.hidden = false;
+  return true;
+}
+
+const startingMilestone = [...timeline.querySelectorAll('[data-timeline]')]
+  .find(link => link.hash === location.hash) ?? timeline.querySelector('[data-timeline]');
+showMilestone(startingMilestone);
+
+timeline.addEventListener('click', event => {
+  const link = event.target.closest('[data-timeline]');
+  if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (showMilestone(link)) {
+    event.preventDefault();
+    if (timelinePreview.getBoundingClientRect().top > window.innerHeight - 120) {
+      timelinePreview.scrollIntoView({block: 'start'});
+    }
+  }
+});

@@ -12,7 +12,7 @@ Family history contributions should cite the underlying record. Ask permission b
 
 The atlas lives in `roots/`. Its citations appear alongside each claim. The family-tree worksheet keeps inputs in the current page and exports a plain-text file directly in the browser.
 
-The historical surname index lives in `tree/`. Each branch cites the sources that name its relationships. Individual sightings stay separate until a record connects them. The filter searches the records on the page.
+The timeline and historical surname index live in `tree/`. Each branch cites the sources that name its relationships. Individual sightings stay separate until a record connects them. The modern family chart cites family testimony and published records.
 
 The Source Book lives in `sources/`. Each record page identifies the version consulted, separates recorded wording from interpretation, and links back to the archive or published source.
 
@@ -22,7 +22,14 @@ Jesionowski Today lives in `today/`. Its searchable directory describes public w
 
 ## Generated art
 
-The bookplate and meadow were created with the built-in OpenAI image generation tool. The files in `assets/` are JPEG versions for the site.
+The bookplate, meadow, and ash-tree mark were created with the built-in OpenAI image generation tool. The mark is a transparent PNG for the masthead and favicon.
+
+<details>
+<summary>Ash-tree mark prompt · assets/ash-tree-mark.png</summary>
+
+Use case: logo-brand. Design a finished icon for the Jesionowski family archive, replacing its old north-star favicon and masthead symbol. Square 1:1 with a truly transparent canvas outside a single rounded-square solid deep aubergine/plum tile (#2a2042), tile fills nearly entire canvas with only a tiny perimeter. Center one exceptionally legible warm antique gold (#ffda9c) European ash tree silhouette. The canopy is made from just three bold, recognizable sprays of opposite paired leaflets with a terminal leaflet, suggesting Fraxinus excelsior. Strong simple trunk, balanced three clearly forked exposed roots. One small but thick pale-gold four-point north star in the open upper right inside the tile, separate from the leaves, as a quiet echo of the archive’s old logo and the family's heaven-and-earth symbolism. Keep the tree bold, compact, clear and iconic at 16, 32, and 38 pixels. Design like a modern heritage bookplate stamp cut from two flat solid colors, precise shapes, nearly symmetrical tree, high contrast. Strong thicker silhouettes, broad intentional negative space. No tiny filigree, no texture, no gradient, no shadows, no thin circular borders, no letters, no words, no additional motifs. Show only the single finished square mark.
+
+</details>
 
 <details>
 <summary>Bookplate prompt · assets/jesionowski-bookplate.jpg</summary>

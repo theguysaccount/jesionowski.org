@@ -30,5 +30,16 @@ directorySearch.addEventListener('submit', event => event.preventDefault());
 directorySearch.addEventListener('reset', () => requestAnimationFrame(filterProfiles));
 directoryQuery.addEventListener('input', filterProfiles);
 
+function revealLinkedProfile() {
+  const linked = document.getElementById(location.hash.slice(1))?.closest('#directory-profiles article');
+  if (linked?.hidden) {
+    directoryQuery.value = '';
+    filterProfiles();
+    linked.scrollIntoView();
+  }
+}
+
+window.addEventListener('hashchange', revealLinkedProfile);
 filterProfiles();
+revealLinkedProfile();
 directorySearch.hidden = false;
