@@ -110,6 +110,7 @@
 .public-life-note p + p { margin-top: .62rem; }
 .public-life-note .artwork { width: min(100%, 9rem); }
 .public-life-note .public-life-landscape { width: min(100%, 23rem); }
+.public-life-gallery { display: grid; gap: 1rem; max-width: 23rem; }
 .public-life-note figcaption { display: block; text-align: left; }
 
 .population-grid, .record-tree-grid, .research-guide { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
